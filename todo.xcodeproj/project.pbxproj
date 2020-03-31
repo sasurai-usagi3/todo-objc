@@ -16,6 +16,7 @@
 		B4311AFB2433FCC500C12122 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311AFA2433FCC500C12122 /* main.m */; };
 		B4311B052433FCC600C12122 /* todoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B042433FCC600C12122 /* todoTests.m */; };
 		B4311B102433FCC600C12122 /* todoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B0F2433FCC600C12122 /* todoUITests.m */; };
+		B4311B20243400D100C12122 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B1F243400D100C12122 /* TaskListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B4311B0B2433FCC600C12122 /* todoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4311B0F2433FCC600C12122 /* todoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = todoUITests.m; sourceTree = "<group>"; };
 		B4311B112433FCC600C12122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4311B1E243400A300C12122 /* TaskListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
+		B4311B1F243400D100C12122 /* TaskListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				B4311AEC2433FCC300C12122 /* SceneDelegate.m */,
 				B4311AEE2433FCC300C12122 /* ViewController.h */,
 				B4311AEF2433FCC300C12122 /* ViewController.m */,
+				B4311B1E243400A300C12122 /* TaskListViewController.h */,
+				B4311B1F243400D100C12122 /* TaskListViewController.m */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				B4311AF02433FCC300C12122 /* ViewController.m in Sources */,
 				B4311AEA2433FCC300C12122 /* AppDelegate.m in Sources */,
 				B4311AFB2433FCC500C12122 /* main.m in Sources */,
+				B4311B20243400D100C12122 /* TaskListViewController.m in Sources */,
 				B4311AED2433FCC300C12122 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
