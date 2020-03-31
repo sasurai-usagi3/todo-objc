@@ -104,12 +104,7 @@
 		B4311AE72433FCC300C12122 /* todo */ = {
 			isa = PBXGroup;
 			children = (
-				B4311AE82433FCC300C12122 /* AppDelegate.h */,
-				B4311AE92433FCC300C12122 /* AppDelegate.m */,
-				B4311AEB2433FCC300C12122 /* SceneDelegate.h */,
-				B4311AEC2433FCC300C12122 /* SceneDelegate.m */,
-				B4311AEE2433FCC300C12122 /* ViewController.h */,
-				B4311AEF2433FCC300C12122 /* ViewController.m */,
+				B4311B1D2433FF5B00C12122 /* Presentation */,
 				B4311AF12433FCC300C12122 /* Main.storyboard */,
 				B4311AF42433FCC500C12122 /* Assets.xcassets */,
 				B4311AF62433FCC500C12122 /* LaunchScreen.storyboard */,
@@ -135,6 +130,19 @@
 				B4311B112433FCC600C12122 /* Info.plist */,
 			);
 			path = todoUITests;
+			sourceTree = "<group>";
+		};
+		B4311B1D2433FF5B00C12122 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B4311AE82433FCC300C12122 /* AppDelegate.h */,
+				B4311AE92433FCC300C12122 /* AppDelegate.m */,
+				B4311AEB2433FCC300C12122 /* SceneDelegate.h */,
+				B4311AEC2433FCC300C12122 /* SceneDelegate.m */,
+				B4311AEE2433FCC300C12122 /* ViewController.h */,
+				B4311AEF2433FCC300C12122 /* ViewController.m */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
