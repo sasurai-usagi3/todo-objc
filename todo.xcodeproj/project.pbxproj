@@ -19,6 +19,7 @@
 		B4311B20243400D100C12122 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B1F243400D100C12122 /* TaskListViewController.m */; };
 		B4311B24243417BA00C12122 /* TaskItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B23243417BA00C12122 /* TaskItemView.m */; };
 		B4311B26243418DA00C12122 /* TaskItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4311B25243418DA00C12122 /* TaskItemView.xib */; };
+		B4311B2B24357AE200C12122 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B2A24357AE200C12122 /* Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		B4311B22243416E100C12122 /* TaskItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskItemView.h; sourceTree = "<group>"; };
 		B4311B23243417BA00C12122 /* TaskItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskItemView.m; sourceTree = "<group>"; };
 		B4311B25243418DA00C12122 /* TaskItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskItemView.xib; sourceTree = "<group>"; };
+		B4311B2924357A4000C12122 /* Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		B4311B2A24357AE200C12122 /* Task.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		B4311AE72433FCC300C12122 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				B4311B2824357A2100C12122 /* Model */,
 				B4311B1D2433FF5B00C12122 /* Presentation */,
 				B4311AF12433FCC300C12122 /* Main.storyboard */,
 				B4311AF42433FCC500C12122 /* Assets.xcassets */,
@@ -172,6 +176,15 @@
 				B4311B25243418DA00C12122 /* TaskItemView.xib */,
 			);
 			path = TaskItemView;
+			sourceTree = "<group>";
+		};
+		B4311B2824357A2100C12122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4311B2924357A4000C12122 /* Task.h */,
+				B4311B2A24357AE200C12122 /* Task.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4311B2B24357AE200C12122 /* Task.m in Sources */,
 				B4311B24243417BA00C12122 /* TaskItemView.m in Sources */,
 				B4311AF02433FCC300C12122 /* ViewController.m in Sources */,
 				B4311AEA2433FCC300C12122 /* AppDelegate.m in Sources */,
