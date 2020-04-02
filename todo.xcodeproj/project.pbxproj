@@ -16,6 +16,10 @@
 		B4311AFB2433FCC500C12122 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311AFA2433FCC500C12122 /* main.m */; };
 		B4311B052433FCC600C12122 /* todoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B042433FCC600C12122 /* todoTests.m */; };
 		B4311B102433FCC600C12122 /* todoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B0F2433FCC600C12122 /* todoUITests.m */; };
+		B4311B20243400D100C12122 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B1F243400D100C12122 /* TaskListViewController.m */; };
+		B4311B24243417BA00C12122 /* TaskItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B23243417BA00C12122 /* TaskItemView.m */; };
+		B4311B26243418DA00C12122 /* TaskItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4311B25243418DA00C12122 /* TaskItemView.xib */; };
+		B4311B2B24357AE200C12122 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = B4311B2A24357AE200C12122 /* Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,13 @@
 		B4311B0B2433FCC600C12122 /* todoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4311B0F2433FCC600C12122 /* todoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = todoUITests.m; sourceTree = "<group>"; };
 		B4311B112433FCC600C12122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4311B1E243400A300C12122 /* TaskListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
+		B4311B1F243400D100C12122 /* TaskListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
+		B4311B22243416E100C12122 /* TaskItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskItemView.h; sourceTree = "<group>"; };
+		B4311B23243417BA00C12122 /* TaskItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskItemView.m; sourceTree = "<group>"; };
+		B4311B25243418DA00C12122 /* TaskItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskItemView.xib; sourceTree = "<group>"; };
+		B4311B2924357A4000C12122 /* Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		B4311B2A24357AE200C12122 /* Task.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +115,7 @@
 		B4311AE72433FCC300C12122 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				B4311B2824357A2100C12122 /* Model */,
 				B4311B1D2433FF5B00C12122 /* Presentation */,
 				B4311AF12433FCC300C12122 /* Main.storyboard */,
 				B4311AF42433FCC500C12122 /* Assets.xcassets */,
@@ -135,14 +147,44 @@
 		B4311B1D2433FF5B00C12122 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B4311B212434167E00C12122 /* CustomView */,
 				B4311AE82433FCC300C12122 /* AppDelegate.h */,
 				B4311AE92433FCC300C12122 /* AppDelegate.m */,
 				B4311AEB2433FCC300C12122 /* SceneDelegate.h */,
 				B4311AEC2433FCC300C12122 /* SceneDelegate.m */,
 				B4311AEE2433FCC300C12122 /* ViewController.h */,
 				B4311AEF2433FCC300C12122 /* ViewController.m */,
+				B4311B1E243400A300C12122 /* TaskListViewController.h */,
+				B4311B1F243400D100C12122 /* TaskListViewController.m */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B4311B212434167E00C12122 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B4311B27243418DE00C12122 /* TaskItemView */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		B4311B27243418DE00C12122 /* TaskItemView */ = {
+			isa = PBXGroup;
+			children = (
+				B4311B22243416E100C12122 /* TaskItemView.h */,
+				B4311B23243417BA00C12122 /* TaskItemView.m */,
+				B4311B25243418DA00C12122 /* TaskItemView.xib */,
+			);
+			path = TaskItemView;
+			sourceTree = "<group>";
+		};
+		B4311B2824357A2100C12122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4311B2924357A4000C12122 /* Task.h */,
+				B4311B2A24357AE200C12122 /* Task.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +292,7 @@
 			files = (
 				B4311AF82433FCC500C12122 /* LaunchScreen.storyboard in Resources */,
 				B4311AF52433FCC500C12122 /* Assets.xcassets in Resources */,
+				B4311B26243418DA00C12122 /* TaskItemView.xib in Resources */,
 				B4311AF32433FCC300C12122 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,9 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4311B2B24357AE200C12122 /* Task.m in Sources */,
+				B4311B24243417BA00C12122 /* TaskItemView.m in Sources */,
 				B4311AF02433FCC300C12122 /* ViewController.m in Sources */,
 				B4311AEA2433FCC300C12122 /* AppDelegate.m in Sources */,
 				B4311AFB2433FCC500C12122 /* main.m in Sources */,
+				B4311B20243400D100C12122 /* TaskListViewController.m in Sources */,
 				B4311AED2433FCC300C12122 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
