@@ -1,4 +1,5 @@
 #import "TaskListViewController.h"
+#import "TaskItemView.h"
 
 @implementation TaskListViewController
 @synthesize table;
@@ -15,8 +16,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"test"];
+    NSBundle *bundle = [NSBundle mainBundle];
+    UINib *nib2 = [UINib nibWithNibName:@"TaskItemView" bundle:bundle];
 
-    return cell;
+    TaskItemView *item = [nib2 instantiateWithOwner: self options: nil][0];
+
+    return item;
 }
 @end
