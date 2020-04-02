@@ -2,6 +2,10 @@
 #import "TaskItemView.h"
 #import "Task.h"
 
+@interface TaskListViewController()
+@property (nonatomic, weak) IBOutlet UITableView *table;
+@end
+
 @implementation TaskListViewController {
 @private NSArray *tasks;
 }
