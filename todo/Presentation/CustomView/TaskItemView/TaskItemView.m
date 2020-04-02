@@ -1,5 +1,10 @@
 #import "TaskItemView.h"
 
+@interface TaskItemView()
+@property IBOutlet UILabel *labelTitle;
+@property IBOutlet UILabel *labelDate;
+@end
+
 @implementation TaskItemView
 
 - (void) title:(NSString *)title date:(NSDate *)date {
@@ -7,7 +12,7 @@
 
     [formatter setDateFormat:@"yyyy-MM-dd"];
 
-    labelTitle.text = title;
-    labelDate.text = [formatter stringFromDate:date];
+    self.labelTitle.text = title;
+    self.labelDate.text = [formatter stringFromDate:date];
 }
 @end

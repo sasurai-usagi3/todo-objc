@@ -1,10 +1,5 @@
 #import <UIKit/UIKit.h>
 
-@interface TaskItemView : UITableViewCell {
-@private
-    IBOutlet UILabel *labelTitle;
-    IBOutlet UILabel *labelDate;
-}
-
+@interface TaskItemView : UITableViewCell
 - (void) title:(NSString *)title date:(NSDate *)date;
 @end
